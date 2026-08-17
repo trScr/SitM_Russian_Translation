@@ -1,0 +1,1820 @@
+# NOTES:
+# The # Symbol at the start of a line counts as a Comment. To include in dialog, use a \#
+# The . Symbol will cause a pause unless escaped with \. (ex: Mr. Oshiro has a pause, Mr\. Oshiro does not)
+# Newlines automatically create a Page Break, unless there is an {n} command on the previous line
+# Commands: Anything inside of curly braces {...} is a command and should not be translated.
+
+# Inline Text Commands:
+# {~}wavy text{/~}
+# {!}impact text{/!}
+# {>> x}changes speed at which characters are displayed{>>}
+# {# 000000}this text is black{#} (uses HEX color values)
+# {+MENU_BEGIN} inserts the dialog from the MENU_BEGIN value (in English, "CLIMB")
+# {n} creates a newline, without a page break
+# {0.5} creates a 0.5 second pause
+# {big}this text is large{/big}
+
+# Gameplay Control Commands (should never change)
+# {trigger x} this triggers an in-game event
+# {anchor} controls the visual position of the textbox in-game
+
+# Mod
+	Bissy_0= Mirage Rock
+	factory_BZFR=Spark in the Machine
+     
+# Chapters
+	Bissy_0_1_MirageRock= Mirage Rock
+	factory_BZFR_factory=Spark in the Machine
+
+# Poem
+	poem_factory_BZFR_factory_A=Time Strips the Gears{n}‘Til You Forget What They Were For
+
+# Checkpoints
+	factory_BZFR_factory_A_start=The Boundary
+	factory_BZFR_factory_b_00_out=Metalworks
+	factory_BZFR_factory_c_00_out=Forlorn Industry
+	factory_BZFR_factory_d_00_in=My Closest Friend
+	factory_BZFR_factory_e_00_in=The Machine
+	factory_BZFR_factory_f_00_night=Stray Catwalks
+	factory_BZFR_factory_g_00_night=Tinkerer's Dissent
+	factory_BZFR_factory_h_00_east=Left Running
+	factory_BZFR_factory_i_00_collapse=The Outcome
+
+# Names
+	EDWIN={# ffdb3b}Edwin{#}
+	WATTSON={# ffffab}Wattson{#}
+
+# GUI Texts
+
+BZFR_explosion_prompt=Press
+
+SiTM_area1=
+OUTER PERIMETER: DECAYING WILDS
+
+SiTM_area2=
+OUTER PERIMETER: METALWORKS
+
+SiTM_area3=
+WEST SECTOR: COLD START
+
+SiTM_area3b=
+WEST SECTOR: MY CLOSEST FRIEND
+
+SiTM_area4=
+WEST SECTOR: THE MACHINE
+
+SiTM_area4b=
+WEST SECTOR: CENTRAL ENGINE
+
+SiTM_area5=
+INNER CIRCLE: INDUSTRIAL CROSSING
+
+SiTM_area6=
+EAST SECTOR: TINKERER'S REMNANTS
+
+# Dialogs
+
+
+SiTM_factory_intro= 
+Dear Ms. Madeline,
+I hope this letter finds you swiftly and in good health, for time is of the utmost essence.
+I fear something important may be lost forever if I wait, so I humbly request your assistance.
+The coordinate for the location is as follows:
+XXX-36 .16 XbXX8X.51X.XX
+Please make haste, for the very fabric of my existence may rest on your shoulders.
+I bid you a safe journey, and hope to reconcile with you soon.
+Best, {n}Mr. Oshiro
+
+
+SiTM_driveWalkup=
+[MADELINE left sad]
+Huh. Looks like this is as far as I'll be able to drive.
+...
+[MADELINE left distracted]
+What even is this place? It's completely abandoned.
+{trigger 0}
+[MADELINE left determinedclosed]
+Alright {+MADELINE}. You can do this.
+[MADELINE left distracted]
+Just gotta find him quickly. I hope he's okay...
+
+SiTM_poem_hint=
+Etched into the statue, almost illegible, is a short poem:
+{# 888888}- In locale long-overrun, sudden bursts of illumination -
+- In plain sight, reasons scattered to unearth motion -
+- In a machine which has long since stopped -{#}
+
+
+SiTM_oshiro_intro_1=
+[OSHIRO right sidesuspicious]
+{+thought}Surrounded by your works like this... even after all these years, you still haven't changed...{+endthought}
+[OSHIRO right sideworried]
+{+thought}Why can't I simply knock on his door like anyone else would...?{+endthought}
+
+
+SiTM_oshiro_intro_2=
+[MADELINE left surprised]
+{+MROSHIRO}, I finally found you!
+
+{trigger 0 oshiro turns around}
+
+[OSHIRO right normal]
+Ah, {+MS_MADELINE}! You finally made it!
+I am {!}so{/!} glad you're here.
+
+{trigger 1 oshiro floats down}
+
+[MADELINE left normal]
+I'm happy to see you're fine! 
+[MADELINE left sad]
+So what's wrong? Your letter was cryptic, but it seemed pretty serious.
+
+[OSHIRO right drama]
+Ah, yes. You see, {+MS_MADELINE}, I've been facing a monumental crisis...
+
+{trigger 2 oshiro floats away}
+
+[OSHIRO right sideworried]
+The Celestial Resort Hotel has just recently run out of its {#ffc370}ChocoMart™{#} fabric softener! 
+[OSHIRO right drama flip]
+Without it, I’m dreading that our {~}softest blankets{/~} will start to {!}harden{/!} in texture.
+
+{trigger 3 oshiro floats back, camera zoom}
+
+[OSHIRO right nervous]
+If we don’t get our hands on that fabric softener, I can see the grim reality already! {*}Bombarded with one star reviews...{/*}
+
+[MADELINE left upset]
+...
+So let me get this straight.
+You wrote that dramatic letter, and rushed me all the way out here... just to get you some fabric softener?
+
+[OSHIRO right normal]
+{~}Au contraire, {+MS_MADELINE}!{/~} This is not {!}just{/!} some fabric softener! 
+This represents the livelihood of the entire resort!
+[OSHIRO right sidehappy flip]
+Just imagine surrendering to the embrace of the fluffy, cloud-like blankets enhanced by the {#ffc370}ChocoMart™{#} fabric softener!
+[OSHIRO right normal]
+A night of unparalleled comfort and luxury.
+[OSHIRO right nervous]
+The customers won't even want to get up in the morning!
+
+[MADELINE left upset]
+...Uh huh.
+
+[OSHIRO right normal]
+Now, come with me {+MS_MADELINE}!
+The true {~}conundrum{/~} lies on the inside!
+
+
+SiTM_oshiro_factory_1=
+[OSHIRO right normal]
+Right this way, {+MS_MADELINE}.
+
+{trigger 0 walk forward}
+
+[MADELINE left distracted]
+This place is practically falling apart {+MROSHIRO}...
+[MADELINE left sad]
+Is this really the best option for getting fabric softener?
+
+{trigger 1 oshiro turns left}
+
+[OSHIRO right normal]
+Oh, without a doubt!
+[OSHIRO right normal]
+I'm quite {0.3}{~}familiar{/~}{0.4} with this factory.
+[OSHIRO right nervous]
+I've done more than just toil away at my hotel, you know!
+
+{trigger 2 oshiro turns right}
+
+[OSHIRO right sidesuspicious]
+However, it seems there have been some renovations under way.
+These yellow switches have showed up everywhere.
+[OSHIRO right sideworried]
+Unfortunately for me, it seems I lack the... {~}physical form{/~} to activate them.
+
+{trigger 3 oshiro turns left}
+
+[OSHIRO right normal]
+This is where you come in, {+MS_MADELINE}! I've never been more appreciative of your assistance.
+
+[MADELINE left sad]
+So you just want me to activate these switches?
+[MADELINE left normal]
+I suppose I can help with that.
+[MADELINE left upset]
+{1.0}...You didn't need to scare me with that ominous letter though.
+
+
+SiTM_oshiro_factory_2=
+[OSHIRO left normal]
+Thank you so much {+MS_MADELINE}! You're always so reliable.
+
+[MADELINE right normal]
+No problem! I'm glad I was able to help.
+[MADELINE right distracted]
+So... what now? How do we actually {~}find{/~} the fabric softener?
+
+[OSHIRO left normal]
+Simple! We'll split up and search.
+Somewhere in this factory lies an assembly line...
+[OSHIRO left sidehappy]
+Overflowing with supplies to keep my blankets in cloudlike bliss for the next decade!
+
+[MADELINE right sad]
+Right. So what should I be looking for exactly?
+[MADELINE right distracted]
+I can't help but feel a bit uneasy with a factory in these conditions.
+
+[OSHIRO left normal]
+Oh, trust me. You'll know when you see it. 
+[OSHIRO left worried]
+The machinery is so loud, the production line is so relentless, it practically {~}screams{/~} its presence.  
+
+[MADELINE right distracted]
+See, that's what worries me. This place seems completely {~}abandoned{/~}.
+[MADELINE right sad]
+Are you sure the assembly line is even-
+
+[OSHIRO left nervous]
+{!}AH!{/!} There's no time to waste![OSHIRO left sidehappy flip] We'll regroup once one of us finds it!
+
+{trigger 0 oshiro fucks off}
+
+[MADELINE right sad flip]
+Wait, {+MROSHIRO}-
+[MADELINE right upset flip]
+...
+[MADELINE right determinedclosed flip]
+{0.5}...What have I gotten myself into?
+
+
+
+SiTM_oshiro_confront=
+[OSHIRO left nervous]
+Ah, {+MS_MADELINE}! How is your search going?
+
+[MADELINE right sad]
+No luck yet. How about you?
+
+[OSHIRO left nervous]
+Oh yes... I also haven't had much luck...
+...
+
+[MADELINE right distracted]
+You seem pretty on edge, {+MROSHIRO}. Is the hotel business doing okay?
+[MADELINE right sad]
+Besides the whole... blanket crisis, I mean.
+
+[OSHIRO left worried]
+Oh, it's {~}buzzing{/~}, {+MS_MADELINE}! Customers are through the roof, and this time only metaphorically!
+[OSHIRO left normal]
+Your cleanup help really gave me the push I needed to get the place in tip-top shape.
+
+[MADELINE right normal]
+I'm just happy I could help.
+[MADELINE right distracted]
+Do you... usually come here to get the fabric softener yourself? Why did you bring me with you this time? 
+
+[OSHIRO left worried]
+Oh, heavens no! I had it all stockpiled, it just ran out the other day, and I knew there was no time to waste.
+[OSHIRO left sidesuspicious]
+{+thought}Why is she asking me all these questions all of a sudden?{+endthought}
+
+[MADELINE right sad]
+{+MROSHIRO}, I'm glad you're doing better with your hotel, but your lying skills need some work.
+What's really going on here?
+[MADELINE right distracted]
+It's not nice to drag someone along with you if you aren't going to say why.
+
+[OSHIRO left nervous]
+...
+[OSHIRO left serious]
+Alright, you caught me. 
+There's an... {~}old acquaintance{/~} of mine who resides in this factory, and I was hoping to reconnect with him, somehow.
+[OSHIRO left wistful]
+You always seemed to be so good at befriending people.
+Heck, you and {+THEO} got along like clockwork!
+[OSHIRO left serious]
+I suppose I just thought it'd be helpful to have you by my side for it. We didn't exactly part on great terms.
+
+[MADELINE right sad]
+You know, you could have just told me that. There was no need for your weird bedding story.
+
+[OSHIRO left serious]
+You're right, {+MS_MADELINE}. I should have been more truthful with you, I have no excuse.
+
+[MADELINE right distracted]
+I mean,[MADELINE right normal] I'll still help! 
+It's nice to see you wanting to connect with people, and I'm excited to meet your friend. 
+
+[MADELINE right distracted]
+Just, next time tell me that, alright?
+
+[OSHIRO left wistful]
+Of course, {+MS_MADELINE}. Thank you.
+
+
+{trigger 0 oshiro digs for key}
+
+[OSHIRO left normal]
+It's quite a mess in here, but I found this key in this storage closet.
+I suspect it unlocks the upper levels of the factory.
+
+{trigger 1 oshiro gives key}
+
+[MADELINE right normal]
+Thanks, {+MROSHIRO}. I'll check it out.
+
+
+
+
+
+SiTM_mini_locked_door_1=
+[MADELINE right sad]
+Seems like it's sealed shut...
+
+SiTM_elevator_fail_1=
+[MADELINE left distracted]
+Hm?
+
+SiTM_elevator_fail_2=
+[MADELINE left panic]
+Oh no...
+
+SiTM_elevator_fail_3=
+[MADELINE left panic]
+{~}{big}AHHHHHHH!{/big}{/~}
+
+SiTM_post_elevator_fail=
+[MADELINE left panic]
+Ugh... my everything hurts...
+
+{trigger 0 madeline sits up}
+
+That's gotta be the second worst fall I've ever had...
+
+{trigger 1 madeline gets up}
+
+[MADELINE left distracted]
+Wait... {0.5}[MADELINE left surprised]This is where that locked door was!
+
+{trigger 2 camera pan}
+
+[MADELINE left sad]
+That's one way to unlock the path, I guess.
+
+[MADELINE left upset]
+Just wish it didn't involve nearly turning me into a pancake.
+
+{trigger 3 camera pan back}
+
+[MADELINE left sadder]
+...
+
+{trigger 4 turn around}
+
+[MADELINE left determinedclosed]
+Okay. Breathe, {+MADELINE}.
+Everything will be fine. {n} Just gotta keep pushing forward.
+
+SiTM_mini_post_elevator=
+[MADELINE left sad]
+The previous path is completely sealed off...
+
+SiTM_edwin_intro=
+[EDWIN left excited]
+{~}{big}A visitor!{/big}{/~} 
+[EDWIN left normal]
+How wonderfully unexpected. {~}Welcome to my stage!{/~}
+
+[MADELINE right surprised]
+Whoa! Are you... a robot?
+
+{trigger 0 edwin moves in}
+
+[EDWIN left proud]
+I'm {+EDWIN}, the inventor! 
+Most everything you see here, from cogs, to gears, and delightful contraptions, was built by me.
+[EDWIN left normal]
+And your name, miss?
+
+[MADELINE right normal]
+I'm {+MADELINE}, I'm a mountain climber. 
+
+[EDWIN left normal]
+Pleasure to be at your {~}acquaintance{/~}. 
+
+[MADELINE right distracted]
+...
+[MADELINE right sad]
+I am {~}so{/~} sorry.
+
+[EDWIN left curious]
+Hm, by the looks of smoke and soot on your cheek I take it something gave you trouble?
+
+[MADELINE right panic]
+Your elevator! I took your elevator and it just... got {~}STUCK{/~} and {!}FELL{/!} and now it's-
+[MADELINE right sad]
+...I broke it. I broke your elevator.
+I swear I didn't touch anything I wasn't supposed to!
+[MADELINE right sad]
+It just... {0.5}died.
+[MADELINE right distracted]
+With me in it.
+
+[EDWIN left normal]
+Oh! {~}That{/~} old thing?
+Don't worry about it. The whole factory's practically falling apart...
+
+{trigger 1 edwin turns around}
+
+[EDWIN left resigned flip]
+There's just too much to fix. I don't even know where to start.
+
+[MADELINE right sad]
+Still. Let me help fix things around here.
+[MADELINE right distracted]
+It's the least I can do for breaking your elevator.
+
+{trigger 2 edwin turns back}
+
+[EDWIN left excited]
+{!}{big}Such generosity!{/big}{/!}
+{!}{big}An offer I could never refuse!{/big}{/!}
+
+{trigger 3 edwin chill}
+
+[EDWIN left normal]
+If you're willing, I would appreciate the help.
+[EDWIN left resigned]
+However, I'm not sure you're up for the job.
+There's so much wreckage around {~}everywhere{/~}, and my transportation system isn't quite finished yet.
+
+[MADELINE right sad]
+I mean, I {!}am{/!} a mountain climber.
+[MADELINE right normal]
+If your concern is just getting around, I can assure you that's my field of expertise!
+I got here, didn't I?
+
+{trigger 4 edwin ponders a bit}
+
+[EDWIN left normal]
+Very well then, {+MADELINE}, no harm in trying I suppose! I'll see if I can give you a bit of a test run!
+Follow along! There's no time to waste!
+
+[MADELINE right normal]
+Actually, before we go... I came here looking for someone. A friend of mine said he was-
+
+[EDWIN left excited]
+{!}{big}A friend!{/big}{/!} 
+Splendid! The more hands the better!
+If they're anything like you, we'll have this place humming by sundown!
+
+[MADELINE right sad]
+That's not really what I-
+
+[EDWIN left proud]
+No time, no time! The masterpiece awaits!
+Follow along, {+MADELINE}!
+
+{trigger 5 edwin bolts off}
+
+[MADELINE right upset]
+...
+Does {~}anyone{/~} around here let me finish a sentence?
+
+
+
+SiTM_edwin_tutorial1=
+[EDWIN left proud]
+We have arrived!
+
+[MADELINE right distracted]
+Where are we exactly?
+
+[EDWIN left excited]
+This, my dear {+MADELINE}, is where my masterpiece lies!
+{~}{!}Behold!{/!}{/~}
+
+{trigger 0 lightbulb appears}
+
+[EDWIN left proud]
+Meet my greatest invention...
+{big}{+WATTSON}!{/big}
+
+[MADELINE right distracted]
+It's a... lightbulb?
+
+[EDWIN left excited]
+The- {!}LIGHTBULB?!{/!}
+{+WATTSON} is no mere lightbulb! He is a {~}powerhouse{/~} of energy! 
+A device that can do {~}anything{/~}!
+[EDWIN left proud]
+And perhaps... my closest friend.
+
+[MADELINE right normal]
+That's cool, {+EDWIN}!
+
+[EDWIN left excited]
+You understand, {+MADELINE}!
+[EDWIN left normal]
+An invention isn't finished just because it {~}works{/~}.
+[EDWIN left proud]
+It's finished when it evokes that giddy child-like {~}wonder{/~} when you look at it!
+[EDWIN left normal]
+Now, collect {+WATTSON} and step up on stage, {+MADELINE}. Let's have a practical demonstration!
+
+
+SiTM_edwin_tutorial2=
+[EDWIN left normal flip]
+{+WATTSON} uses my newly patented technology, the {~}Synchronized Photonic Amplified Resonating Kinetics{/~} protocol!
+Once you make physical contact with {+WATTSON}, he and you will briefly enter a synchronized state...
+[EDWIN left proud flip]
+It's so poetic, it almost brings a tear to my eye.
+
+{trigger 0 edwin moves to switch}
+
+[EDWIN left normal] 
+These switches amongst my factory walls are also my original invention! 
+When you strike them, the switch channels the kinetic energy into {+WATTSON}'s filament core, putting him into a {~}positively charged state{/~}!
+In this state, a {~}command{/~} is all you need to release this stored energy into an explosive reaction!
+
+{trigger 1 camera zoom out}
+
+[EDWIN left normal flip]
+{+MADELINE}! You mentioned you were a mountain climber, did you not?
+Surely, the most natural {~}command{/~} that comes to you would be related to such!
+For example, you could try to just {#bdecff}{~}hold on{/~}{#}, as if you're scaling a cliff face, and {+WATTSON} should respond in kind!
+
+SiTM_edwin_tutorial2b=
+[EDWIN right normal]
+What's wrong, {+MADELINE}? Need a quick reminder?
+You can activate {+WATTSON} by hitting the switch right there.
+[EDWIN right proud]
+Once active, use the most natural movement that comes to you to issue a command. 
+For example, imagine trying to {#bdecff}{~}grab{/~}{#} onto a cliff face. Let your instincts take over!
+
+
+SiTM_edwin_tutorial3=
+[MADELINE right surprised]
+Whoa! That was intense!
+[EDWIN left excited]
+Excellent, excellent! You're a natural at this!
+[EDWIN left proud]
+The performance isn't over. Follow along now!
+
+
+SiTM_edwin_tutorial4=
+[EDWIN left normal]
+Now let's look at one of {+WATTSON}'s most glorious features!
+When {+WATTSON} explodes next to a switch, the explosive energy will not only catapult you, but also activate the switch!
+Now, remember the {~}Synchronized Photonic Amplified Resonating Kinetics{/~} protocol?
+Exploding uses {+WATTSON}'s energy, but activating the switch will immediate recharge {+WATTSON}, achieving a {~}perfect{/~} chain reaction.
+
+{trigger 0 turn around}
+
+[EDWIN left proud flip]
+I spent well over a year developing the technology needed for such a beautiful synchronized dance of energy.
+
+SiTM_edwin_tutorial4b=
+[EDWIN right normal]
+When you release {+WATTSON}'s energy while he's nice and close to a switch, the explosive energy will not only catapult you, but also activate the switch!
+Exploding uses {+WATTSON}'s energy, but activating the switch will immediate re-charge {+WATTSON}, achieving a {~}perfect{/~} chain reaction.
+[EDWIN right proud]
+I spent well over a year developing the technology needed for such a beautiful synchronized dance of energy.
+
+SiTM_edwin_tutorial5=
+[EDWIN left normal]
+Now {+WATTSON} doesn't merely stop at switch activation.
+Anything in this factory that implements the {~}Synchronized Photonic Amplified Resonating Kinetics{/~} protocol, like these automated platforms, can be activated by {+WATTSON}!
+[EDWIN left proud]
+Developing this protocol meant redesigning the entire factory's technological foundation. For example...
+[MADELINE right normal]
+Got it! Magic activation tool!
+[EDWIN left nervous]
+...
+
+SiTM_edwin_tutorial5b=
+[EDWIN left normal]
+{+WATTSON} doesn't merely stop at switches.
+Anything in this factory that implements the {~}Synchronized Photonic Amplified Resonating Kinetics{/~} protocol, like these automated platforms, can be activated by {+WATTSON}!
+
+SiTM_edwin_tutorial6=
+[EDWIN left proud]
+Well, {+MADELINE}, I'm quite impressed! You're a natural at handling {+WATTSON}!
+[EDWIN left normal]
+You also happen to be the first person other than myself to test out this product, so this will be excellent feedback for user experience research.
+
+[MADELINE right distracted]
+I'm the first, huh?
+[MADELINE right sad]
+Well, this definitely violates some legal safety guidelines...
+[MADELINE right normal]
+But it's a truly brilliant invention, even I can see that.
+
+[EDWIN left proud]
+Indeed it is!
+[EDWIN left excited]
+Alright, {+MADELINE}! With your help, we'll get the factory up and running in no time!
+[EDWIN left normal]
+There's a few tasks off a checklist to do. Let's meet at the engine of this sector!
+You can use this time to get used to {+WATTSON}'s abilities. 
+[EDWIN left proud]
+Soon you'll be better at handling him than me!
+
+
+SiTM_edwin_operations_center=
+[EDWIN right normal]
+Ah, splendid! You made it here!
+It's quite impressive how you wield {+WATTSON}. I thought you wouldn't have it in you, but you've proven me wrong!
+
+[MADELINE left normal]
+There's a bit of a learning curve for sure, but I think I'm getting the hang of it!
+
+[EDWIN right proud]
+Excellent! Now onto more important matters...
+[EDWIN right normal]
+To breathe life back into this factory, we'll need to complete a few {~}minor{/~} revival procedures.
+Three to be precise!
+
+[EDWIN right proud]
+First, open the main steam valves! They will regulate the pressure for the machinery to run.
+[EDWIN right normal]
+Second, reconnect the backup power! {+WATTSON} should help with that.
+[EDWIN right proud]
+Finally, flip the backup power lever on, and the machinery will open right back up, allowing us to exit!
+
+[MADELINE left distracted]
+So valves, power, lever. 
+[MADELINE left normal]
+Got it. And what about you?
+
+[EDWIN right normal]
+Me? Oh, I'll be tending to a few {~}delicate{/~} matters nearby.
+[EDWIN right resigned]
+It's been awhile since I've had to rely on the backup power sources.
+[EDWIN right normal]
+There's some emergency safety protocols that need to be disengaged for you to do your job.
+
+[MADELINE left normal]
+Okay, sounds good! I'll meet you back here once the factory is up and running then?
+
+[EDWIN right normal]
+Sounds like a plan! Here's the key to the engine that powers this sector. 
+
+{trigger 0 give key}
+
+[EDWIN right proud]
+Make sure to treat it with respect! I've only given access to this part of the factory to a select few individuals!
+
+
+SiTM_edwin_hm_complete1=
+[MADELINE left normal]
+Well, the lever's been pulled, the power's back on, and the valves are recombobulated. Nothing too tricky!
+
+[EDWIN right normal]
+Indeed they are! Thank you very much for your help, {+MADELINE}.
+
+{trigger 0 walk over and open door}
+
+[EDWIN right normal]
+Exit's this way. After you!
+
+
+
+SiTM_edwin_wires_optional=
+[MADELINE right normal]
+Hey {+EDWIN}! How's it going?
+
+{trigger 0 cam zooms in}
+
+[EDWIN left excited]
+{!}{big}WHOA!{/big}{/!}
+[EDWIN left normal]
+You scared me! I'm not used to having someone to talk to while working!
+
+{trigger 1 cam zooms out}
+
+[EDWIN left proud]
+Usually it's just {+WATTSON} and I!
+He's a wonderful conversation partner. Never interrupts, never disagrees...
+
+[MADELINE right distracted]
+Never says anything?
+
+[EDWIN left proud]
+{!}Exactly!{/!} The perfect colleague!
+
+[MADELINE right distracted]
+Hey, {+EDWIN}. You said {+WATTSON} can do anything, right?
+
+[EDWIN left proud]
+But of course! Switches, platforms, propulsion-
+
+[MADELINE right normal]
+No, I know that part. What I meant was...
+What did you build him {~}for{/~}? Originally?
+
+[EDWIN left curious]
+...
+[EDWIN left normal]
+To be versatile! A tool for {~}every{/~} situation!
+
+[MADELINE right distracted]
+Every situation... but not one in particular?
+
+[EDWIN left nervous]
+...
+Look, not every invention needs some grand purpose!
+[EDWIN left proud]
+Sometimes, you just build. Because the alternative would be {~}NOT{/~} building! 
+[EDWIN left nervous]
+What a terrifying thought.
+
+[MADELINE right sad]
+...
+I'm sorry. I didn't mean to get too personal.
+
+[EDWIN left excited]
+{!}Regardless!{/!} These repairs won't fix themselves! {n}Chop chop!
+
+
+
+SiTM_edwin_hm_complete2=
+[EDWIN right normal]
+Well, here we are!
+
+{trigger 0 edwin turns around and hops towards madeline}
+
+[EDWIN right normal]
+You're very helpful, {+MADELINE}! This would've been days of work for myself, but you made everything so simple!
+I am inspired and indebted, friend.
+[EDWIN right proud]
+How am I so lucky, to have a magical helper like you fall into this factory at such a perfect time?
+
+[MADELINE left normal]
+Of course, {+EDWIN}! It was the least I could do.
+[MADELINE left distracted]
+...
+[MADELINE left sad]
+Actually, remember that friend I mentioned? The one you didn't let me finish talking about?
+[MADELINE left distracted]
+He was hoping to reconnect with someone here, which I'm assuming is you?
+[MADELINE left sad]
+It's {+MROSHIRO}. 
+
+
+{trigger 1 music turns off and edwin moves back slightly}
+
+[EDWIN right solemn]
+...
+I... {0.5}haven't heard that name in a long time.
+I thought he was gone for good!
+[EDWIN right curious]
+He's not here too, is he?
+
+[MADELINE left sad]
+I can never keep track of him, but he's definitely here somewhere.
+[MADELINE left distracted]
+I haven't seen him since before I got blocked off at the elevator.
+
+[EDWIN right solemn]
+...
+[EDWIN right nervous]
+I see, would you give me a moment to think?
+
+{trigger 2 lights flicker}
+
+[EDWIN right normal]
+Well, that simply will not do! As luck would have it, we're not far from the east portion of the factory. 
+If I know him like I think I do, he'll be {~}slinking around{/~} in there.
+[EDWIN right proud]
+Ready to put your helper skills to good use, {+MADELINE}? 
+[EDWIN right normal]
+I'll need some assistance escorting him off my premises.
+
+[MADELINE left distracted]
+...
+[MADELINE left sad]
+Calm down, {+EDWIN}. I'm sure he means well.
+[MADELINE left normal]
+Trust me, I can tell when he's lying, he's not very good at it.
+
+[EDWIN right solemn]
+I'm sure he does.
+[EDWIN right nervous]
+Nonetheless, we must reconvene later. These lights won't fix themselves!
+Exit through the door to your right, and you'll be on your way!
+
+{trigger 3 Edwin walks off}
+
+[MADELINE left sad]
+Wait, {+EDWIN}!
+
+{trigger 4 let it sink in}
+
+[MADELINE left sadder]
+...
+
+
+
+SiTM_east_factory_edwin_intercom=
+[INTERCOM_EDWIN right solemn]
+{+MADELINE}.
+
+[MADELINE left surprised]
+{+EDWIN}? Is that you?
+
+[INTERCOM_EDWIN right solemn]
+I apologize. I needed some distance. 
+This is the {#7eab81}east sector{#} of my factory.
+Most things here were... left running.
+
+[MADELINE left sad]
+You just... walked away from it all?
+
+[INTERCOM_EDWIN right solemn]
+Yes.
+I just stopped coming back, because every time I did, I would tell myself...
+{*}"I'll fix it later."{/*}
+
+[MADELINE left distracted]
+That sounds like someone else I know.
+[MADELINE left sad]
+{+EDWIN}...
+Are you upset with me?
+
+[INTERCOM_EDWIN right solemn]
+No. You're not the problem.
+
+[MADELINE left distracted]
+I don't know what happened between you two in the past...
+[MADELINE left sad]
+But he's scared. 
+The reason I'm here in the first place was because he's too scared to speak to you alone.
+[MADELINE left angry]
+We should talk. {~}All of us.{/~}
+
+[INTERCOM_EDWIN right solemn]
+...
+
+[INTERCOM_EDWIN right resigned]
+This east sector is still traversable.
+
+[INTERCOM_EDWIN right solemn]
+If you insist on pushing forward...
+...
+Don't expect anything to be {~}finished{/~}.
+
+{trigger 0 edwin clicks off}
+
+[MADELINE left determinedclosed]
+Okay, {+MROSHIRO}.
+[MADELINE left distracted]
+Where'd you hide this time?
+
+
+
+
+SiTM_oshiro_breakdown=
+[OSHIRO right sideworried]
+{+thought}I heard him...{+endthought}
+{+thought}That voice. It came through the walls. It's like he's right here.{+endthought}
+
+{trigger 0 madeline walks up}
+
+[MADELINE left sad]
+{+MROSHIRO}?
+
+[OSHIRO right worried]
+Ah, {+MS_MADELINE}! 
+[OSHIRO right nervous]
+I see you've found me. 
+[OSHIRO right sidesuspicious flip]
+You didn't hear me say anything, did you?
+
+[MADELINE left distracted]
+To be honest...
+
+{trigger 1 camera pans around at the dust bunnies everywhere}
+
+[MADELINE left sad]
+You're not that great at hiding your emotions, {+MROSHIRO}.
+I assume you heard {+EDWIN} on the intercom?
+
+[OSHIRO right nervous]
+{*}Yes. I heard him.{/*}
+It would be quite difficult not to.
+
+{trigger 2 oshiro turns around, moves to the corner}
+
+[OSHIRO right serious]
+I shouldn't be here.
+[OSHIRO right lostcontrol]
+{~}No.{/~}
+That's not right.
+I {~}should{/~} be here.
+[OSHIRO right serious]
+I just... {*}don't know what to do now that I am.{/*}
+
+[MADELINE left sad]
+Hey, slow down. You don't have to figure it all out right now.
+
+{trigger 3 intercom comes on}
+
+[INTERCOM_EDWIN right solemn]
+{+MADELINE}, you've reached the interior sector. 
+This area has most of my unfinished projects. You may find the layout tricky to navigate given the mess.
+I recommend you watch your footing and tread carefully.
+
+[MADELINE left sad]
+{+EDWIN}, I'm not alone right now.
+
+[INTERCOM_EDWIN right solemn]
+...
+I see.
+
+{trigger 4 door opens up}
+
+[INTERCOM_EDWIN right solemn]
+I've unlocked the upper path to an observatory at the edge of the {#7eab81}east sector{#}.
+Meet me there.
+
+{trigger 5 intercom close} 
+
+[OSHIRO right serious]
+{+thought}...As straightforward as always. You really haven't changed.{+endthought}
+
+{trigger 6 madeline walks up to oshiro}
+
+[OSHIRO right serious]
+I don't know what I'm supposed to say.
+
+[MADELINE left normal]
+Then don't start there. Come with me! I'll help you unpack your thoughts.
+
+[OSHIRO right serious]
+...Alright. 
+
+
+
+SiTM_oshiro_mini_dialog_1=
+[OSHIRO right nervous]
+Do you ever rehearse a conversation over and over again, but when the time comes, it always... {*}comes out wrong?{/*}
+
+[MADELINE left sad]
+All the time. Especially if it's a topic that means a lot to me.
+
+{trigger 0 oshiro turns around}
+
+[OSHIRO right serious]
+Wonderful. Then you understand how deeply doomed I am.
+
+
+
+SiTM_oshiro_mini_dialog_2=
+[OSHIRO right wistful]
+Whenever I got stuck on something, he always had an answer for it.
+
+[MADELINE left normal]
+That sounds helpful! You two must have worked together well in the past.
+
+[OSHIRO right wistful]
+{+EDWIN} truly was a genius. It felt like he was always three steps ahead! 
+
+{trigger 0 oshiro turns around}
+
+[OSHIRO right serious]
+When he was motivated, that is.
+
+SiTM_oshiro_mini_dialog_3=
+[OSHIRO right wistful]
+I used to tell {+EDWIN}... everything he made looked so wonderful.
+And that wasn't out of politeness. I meant it, every single time.
+
+[MADELINE left distracted]
+Did he receive that well?
+
+[OSHIRO right serious]
+Sometimes.
+I think he needed someone to say it more than he realized.
+
+{trigger 0 oshiro turns around}
+
+[OSHIRO right wistful]
+{~}Perfectionism{/~} comes with some costs, after all.
+
+
+SiTM_oshiro_mini_dialog_4=
+[OSHIRO right serious]
+I keep thinking about what I should say first.
+
+[MADELINE left sad]
+Maybe you can start with what you should've said back then.
+
+[OSHIRO right serious]
+...
+That's exactly what I'm afraid of messing up.
+
+{trigger 0 oshiro drops to the ground}
+
+[MADELINE left sad]
+Hey, it's okay to be scared.
+You've been carrying this for a long time.
+[MADELINE left normal]
+But you came all this way. You've already completed the hardest part.
+
+{trigger 1 oshiro stands up}
+
+[OSHIRO right serious]
+...
+Thank you, {+MS_MADELINE}.
+
+{trigger 2 oshiro turns around}
+
+[OSHIRO right serious]
+I shouldn't delay this any longer.
+
+
+
+SiTM_final_elevator_dialog1=
+[OSHIRO right serious]
+Any last minute advice?
+
+SiTM_final_elevator_dialog3=
+[MADELINE left distracted]
+Just be honest with how you feel. That's usually a good place to start.
+
+SiTM_final_elevator_dialog4=
+[MADELINE left normal]
+I can help lead the conversation.
+
+SiTM_final_elevator_dialog5=
+[OSHIRO right wistful]
+Honesty has never been my strong suit. You should know that better than most, {+MS_MADELINE}.
+
+SiTM_final_elevator_dialog6=
+[OSHIRO right serious]
+Now that it's here, part of me wants the elevator to stop working.
+
+SiTM_final_elevator_dialog7=
+[MADELINE left upset]
+Please don't say that in this factory.
+
+
+
+
+
+SiTM_presidential_suite1=
+[MADELINE right surprised]
+...
+[MADELINE right sad]
+This is... 
+The presidential suite.
+
+{trigger 0 oshiro floats around examining}
+
+[OSHIRO right wistful]
+...You kept it.
+
+{trigger 1 oshiro turns around}
+
+[EDWIN left solemn flip]
+{~}No.{/~}
+I kept rebuilding it.
+Over {0.5}and over {0.5}and over {0.5}again.
+
+{trigger 2 edwin turns around}
+
+[EDWIN left solemn]
+Every time I changed something, {*}I hated it{/*}.
+So I kept building, and removing it. Building, and removing.
+
+[OSHIRO right serious]
+{+EDWIN}...
+
+[EDWIN left bitter]
+Don't. I don't want to hear it.
+
+{trigger 3 madeline steps forward}
+
+[MADELINE right sad]
+Both of you dragged yourselves all the way here. 
+That has to mean something, even if you don't know what to say.
+
+{trigger 4 oshiro contemplates, then steps forward}
+
+[OSHIRO right serious]
+I came because I owed you words I should have said years ago.
+
+[EDWIN left bitter]
+A little late now, don't you think?
+[EDWIN left solemn]
+Do you know what bothered me the most?
+It wasn't the arguing. It wasn't even how our partnership {~}ended.{/~}
+[EDWIN left bitter]
+It was that every beautiful thing I made was reduced to {!}nothing{/!} but for your business.
+Every conversation was the same cheerful little song.
+[EDWIN left proud]
+{*}Open it sooner!{/*}
+[EDWIN left excited]
+{*}Finish it cheaper!{/*}
+[EDWIN left bitter]
+Make it {~}smaller{/~}. {*}Simpler.{/*}
+
+[OSHIRO right serious]
+That's not fair.
+[OSHIRO right lostcontrol]
+I wasn't trying to cheapen your work!
+I was trying to keep everything standing!
+[OSHIRO right serious]
+Staff wages. Maintenance. Guests. Complaints. 
+[OSHIRO right lostcontrol]
+There was always another fire to put out!
+
+[OSHIRO right serious]
+It's just that every time I came to you, you were chasing something that...
+{*}Never seemed finished enough to exist. {/*}
+
+{trigger 5 edwin faces away}
+
+[EDWIN left bitter flip]
+Because it wasn't. 
+
+[OSHIRO right serious]
+{+EDWIN}. I...
+
+[EDWIN left angry]
+{!}{big}BECAUSE IT WASN'T!{/big}{/!}
+
+{trigger 6 edwin moves up to oshiro}
+
+[EDWIN left angry]
+I gave {~}everything{/~} I had to that hotel. 
+I wanted people to walk inside and feel {~}wonder{/~}.
+[EDWIN left bitter]
+And yet, all I could see were the flaws.
+
+{trigger 7 awkward silence, madeline walks up}
+
+[MADELINE right sad]
+{+EDWIN}. When you showed me {+WATTSON}, you looked proud.
+[MADELINE right distracted]
+But every time you talked about your other works in this factory...
+[MADELINE right sad]
+You were grieving.
+
+[EDWIN left bitter]
+Of course I'm proud of {+WATTSON}.
+He's the only thing I ever built that didn't hinge on {~}anything{/~}.
+The only invention of mine anywhere close to being {*}finished{/*}.
+No deadline. No budget. No one to impress.
+[EDWIN left solemn]
+For once, I could just... {*}create{/*}.
+
+[MADELINE right sad]
+...I'm glad you had that opportunity, {+EDWIN}.
+
+{trigger 8 madeline turns to oshiro}
+
+[MADELINE left sad]
+{+MROSHIRO}, every time you talked about {+EDWIN}...
+You sounded like someone who had been hurting for a long time.
+
+[OSHIRO right serious]
+...
+
+{trigger 9 madeline moves back}
+
+[MADELINE right sad]
+I spent years trying to outrun a part of myself I hated.
+The whole time, I thought she was the problem.
+[MADELINE right determinedclosed]
+It turns out she wasn't. Running was.
+[MADELINE right sad]
+You two have been running from this... for years. {~}Decades{/~}, maybe, I don't know.
+And now we're right back in it.
+Maybe it's time to face the problem head on.
+
+{trigger 10 pause, edwin moves towards some object in the room}
+
+[EDWIN left solemn]
+Do you remember the day we first planned this room?
+
+[OSHIRO right wistful]
+Of course.
+
+
+
+SiTM_flashback1= 
+{anchor middle}
+[YOUNG_EDWIN left excited]
+No no no, listen!
+Imagine this: sunlight through the stained glass in the west hall every morning. 
+Guests will wake up feeling like they've stepped into a dream!
+
+[YOUNG_OSHIRO right drama]
+A dream that fits within budget, I hope?
+
+[YOUNG_EDWIN left resigned]
+...Maybe slightly over budget.
+
+[YOUNG_OSHIRO right normal]
+Well, we'll make it work somehow.
+
+{trigger 0 paper shuffling sounds}
+
+[YOUNG_OSHIRO right normal]
+What's this room?
+
+[YOUNG_EDWIN left excited]
+Ah! That's my masterpiece.
+[YOUNG_EDWIN left normal]
+A room unlike any other... 
+A place so beautiful, that stepping inside makes the whole outside world disappear!
+Something...
+{~}Perfect.{/~}
+
+[YOUNG_OSHIRO right normal]
+Sounds wonderful.
+Let's build it.
+
+
+
+SiTM_presidential_suite2=
+{anchor top}
+[OSHIRO right wistful]
+I remember thinking, {thought}"I'd never seen someone love creating so much!"{/thought}
+
+[EDWIN left resigned]
+Back then, it was so... {0.5}{~}easy.{/~}
+But it didn't always stay that way.
+
+
+
+SiTM_flashback2=
+{anchor middle}
+[WORKER left blank]
+Sir, east wing needs the valves reset!
+
+[WORKER left blank]
+Lobby plumbing is backed up!
+
+[WORKER left blank]
+The guest room window latch is stuck!
+
+{trigger 0 long pause, then sound effect of door opening and closing}
+
+[YOUNG_OSHIRO right serious]
+{+EDWIN}... I hate to interrupt.
+
+[YOUNG_EDWIN left solemn]
+Great. What broke now?
+
+[YOUNG_OSHIRO right serious]
+The presidential suite's ceiling panel isn't finished.
+And the grand opening for the suite is {~}tomorrow{/~}!
+{!}Every{/!} important stakeholder you know will be here!
+
+[YOUNG_EDWIN left solemn]
+Then postpone it.
+
+[YOUNG_OSHIRO right serious]
+...
+You can't be serious. We can't postpone this!
+You've postponed {~}five events{/~} already!
+
+[YOUNG_EDWIN left angry]
+Then {!}stop{/!} opening unfinished things! 
+You know how much work there is left to be done!
+
+[YOUNG_OSHIRO right serious]
+...
+I'm trying to keep this business alive.
+
+[YOUNG_EDWIN left solemn]
+And I'm trying to make it worth keeping alive.
+
+[YOUNG_OSHIRO right lostcontrol]
+...{+EDWIN}. We {~}need{/~} to open this suite.
+We are {*}bleeding money{/*}.
+
+[YOUNG_EDWIN left serious]
+No.
+Look at me.
+{~}For once, look at what I'm doing.{/~}
+[YOUNG_EDWIN left angry]
+This is the first thing I've made that feels like {!}MINE{/!}.
+It's not some {*}patchwork solution{/*}, not some {*}temporary workaround{/*}.
+{!}MY{/!} masterpiece.
+And you want me to {~}rush it{/~}?
+
+[YOUNG_OSHIRO right lostcontrol]
+Because {!}nothing{/!} is ever enough for you!
+This {~}perfection{/~} you're chasing is just your excuse to never finish anything!
+
+[YOUNG_EDWIN left angry]
+And your excuse to {~}"make people happy"{/~} just runs everything into the ground!
+
+[YOUNG_OSHIRO right lostcontrol]
+At least I actually {!}CARE{/!} about my guests!
+
+{trigger 1 big crash noise, papers flying everywhere}
+
+[YOUNG_EDWIN left solemn]
+...
+I'm done.
+
+
+
+SiTM_presidential_suite3=
+[EDWIN left solemn flip]
+I kept waiting for {~}perfect{/~}.
+And somewhere along the way, creating stopped feeling joyful.
+Every unfinished machine, every abandoned project, every half-built idea...
+[EDWIN left bitter flip]
+{*}They're just painful monuments to my past failures.{/*}
+[EDWIN left solemn flip]
+When we parted ways, I thought I was finally free.
+But it turns out, when no one is looking at your creations...
+[EDWIN left bitter flip]
+Nothing ever feels {~}finished{/~}.
+
+[OSHIRO right serious]
+And I kept asking for more.
+Because I was terrified that if I stopped moving, everything would...
+{*}Fall apart.{/*}
+...
+[OSHIRO right wistful]
+Eventually it did anyway.
+
+{trigger 0 they turn to look at each other how gay}
+
+[EDWIN left resigned]
+You should have listened to me better.
+
+[OSHIRO right serious]
+I know.
+[OSHIRO right wistful]
+You should have accepted me more.
+
+[EDWIN left solemn]
+...
+I know.
+
+{trigger 1 lights flicker on and off again}
+
+[MADELINE right distracted]
+Um, should the lights be doing that?
+
+[EDWIN left curious]
+Hm. I guess the backup generators are struggling too.
+The factory won't last at this rate. I figured this day would come eventually.
+
+[OSHIRO right worried]
+Is there nothing we can do?
+
+[EDWIN left resigned]
+...There's one reserve of power left in this factory.
+[EDWIN left bitter]
+But it isn't finished.
+
+[OSHIRO right serious]
+{+EDWIN}... how close is it?
+
+[EDWIN left solemn]
+...
+[EDWIN left resigned]
+...Thirty seconds.
+Maybe less.
+
+[MADELINE right surprised]
+{!}Thirty seconds?!{/!}
+
+{trigger 2 edwin moves to a desk in the corner and starts tinkering}
+
+[EDWIN left solemn flip]
+I kept telling myself that it was missing something...
+[EDWIN left resigned flip]
+But today has made it all too clear.
+
+{trigger 3 buzz and hum sound effect, start glow effect, edwin moves towards oshiro}
+
+[EDWIN left normal]
+Here. Hold onto this.
+[EDWIN left proud]
+I'm trusting you not to lose it!
+
+[OSHIRO right serious]
+You'd... trust me with this? 
+
+[EDWIN left solemn]
+...
+I'd trust you can keep something up and running.
+[EDWIN left resigned]
+That was always the part you were good at, wasn't it?
+
+{trigger 4 edwin moves back}
+
+[EDWIN left curious]
+It's funny. All this time, I assumed it was waiting for some {~}spark{/~} of inspiration.
+[EDWIN left proud]
+Apparently it was just waiting for a better day.
+
+{trigger 5 factory shakes, large rumbling in the distance}
+
+[MADELINE right distracted]
+Uh oh.
+
+[EDWIN left normal]
+Well then! We'll need to escape.
+
+[MADELINE right surprised]
+{!}WHAT?{/!}
+
+{trigger 6 a big clang, madeline panics}
+
+[MADELINE right panic]
+{*}What's happening{/*}? What about your factory?
+The battery pack thing, wasn't that supposed to-
+
+[EDWIN left normal]
+It seems the factory's on its last leg! At this point it's beyond salvation.
+[EDWIN left proud]
+This battery pack is {~}only{/~} compatible with {+WATTSON}'s protocol.
+[EDWIN left normal]
+Every invention worth saving is already in {+OSHIRO}'s hands.
+[EDWIN left excited]
+Ready to give this a test run, {+MADELINE}? 
+You too, {+OSHIRO}. Seems like we'll have to work together to escape!
+
+
+
+SiTM_collapse_post_fall=
+[MADELINE left panic]
+Oh my god! {*}That was so close...{/*}
+
+{trigger 0 oshiro floats in}
+
+[OSHIRO right worried]
+{+MS_MADELINE}! Are you alright?
+
+[MADELINE left surprised]
+Yeah! Well, that was close, but...
+[MADELINE left normal]
+Thanks for saving me, {+MROSHIRO}.
+
+[OSHIRO right nervous]
+Unfortunately, it seems like we've separated from {+EDWIN}.
+[OSHIRO right normal]
+No matter, we'll just continue without him for now!
+Knowing {+EDWIN}, he's likely trying to find us. We'll reconvene with him up ahead!
+
+
+SiTM_collapse_reunite=
+[OSHIRO left normal flip]
+I can see the horizon line! We must be getting close!
+
+{trigger 0 the thing falls on madeline, edwin appears, saves her}
+
+[MADELINE right surprised]
+{+EDWIN}!
+
+{trigger 1 edwin idle}
+
+[EDWIN left solemn]
+{+MADELINE}! I am so glad to see you're okay!
+
+{trigger 2 edwin looks at both of you}
+
+[EDWIN left curious]
+Sorry for leaving both of you back there. 
+[EDWIN left resigned]
+Things got a little unstable, and I couldn't warn you in time.
+My sincerest apologies.
+
+[MADELINE right normal]
+Don't worry! {+MROSHIRO} and I made it out safe.
+Turns out we're a pretty good team!
+
+{trigger 3 edwin looks at oshiro}
+
+[OSHIRO left sidehappy flip]
+{+thought}Well done, {+oshiro}! Who would've thought you'd end up making such a splendid teammate for {+MS_MADELINE}?{+endthought}
+
+[EDWIN right proud]
+Save the chatter for later, {+oshiro}!
+[EDWIN right solemn]
+...
+[EDWIN right normal]
+There's just a few more obstacles to get past, then we're home free!
+
+SiTM_collapse_pre_final=
+[EDWIN left excited flip]
+We're almost out! Just one final obstacle to cross!
+[MADELINE right determined]
+Let's do it.
+
+
+
+
+
+SiTM_ending_scene=
+[OSHIRO right serious]
+{+EDWIN}...
+Your factory... {0.5}it's all gone.
+
+{trigger 0 oshiro turns to look at edwin}
+
+[EDWIN left solemn]
+My life's work... in a flash.
+It was a brilliant escape, but a sorrowful one all the same.
+[EDWIN left bitter]
+So much time, devoted solely to all this. 
+[EDWIN left solemn]
+To building, to refining, to restarting...
+[EDWIN left bitter]
+I suppose in the grand scheme of things, this is nothing new.
+[MADELINE left distracted]
+You're not grieving?
+
+
+
+{trigger 1 edwin turns around to madeline + cam zoom}
+[EDWIN right solemn]
+Every gadget in there was a part of me, in some form. A capsule of the time I spent on it.
+[EDWIN right bitter]
+A capsule of {*}frustration{/*} and {~}unresolved tension{/~}, years, disallowed from reaching fruition.
+At the end of the day, that monolith was nothing but an anchor, a way to feel busy and distract myself.
+I guess it took the whole thing exploding in my face to see how obsessive it all was.
+
+[MADELINE left sad]
+It must've taken a lot to admit that, {+EDWIN}.
+
+{trigger 2 pause, edwin turns to oshiro}
+
+[OSHIRO right serious]
+...
+I owe you both a massive apology. I don't even know where to start.
+{+MS_MADELINE}, you risked your life for me under completely false pretenses. For that, I am truly sorry.
+
+[MADELINE left sad]
+You don't have to keep apologizing forever, {+MROSHIRO}. Thanks for saving my life back there.
+
+{trigger 3 pause, oshiro moves towards edwin}
+
+[OSHIRO right serious]
+{+EDWIN}... I-
+
+[EDWIN left solemn]
+{+OSHIRO}. Your actions have been an untouchable thorn in my side for longer than I can even remember.
+Now that everything's done and over with, I don't feel that anger anymore.
+[EDWIN left resigned]
+I think I know what my inventions have been missing, now that my head's a bit more clear.
+
+[OSHIRO right wistful]
+Oh?
+
+[EDWIN left resigned]
+It's going to take {~}a long time{/~} to rebuild.
+
+[OSHIRO right wistful]
+If that's your course of action, {+EDWIN}, would you be... needing an extra pair of hands?
+
+[EDWIN left normal]
+I think I'd like that.
+
+{trigger 4 edwin hops over to the edge}
+
+[EDWIN left normal]
+Tomorrow sounds like a good day to start.
+
+
+
+
+
+# Misc dialogue and unused
+
+SiTM_playtester_credits=
+Emanating softly from the mysterious statue, are echoes from those who bore witness to the assembly of this machine:
+Donk
+"I didn’t know when to dash or blow!"
+Kazt
+"Chat do you think Oshiro and Edwin were lovers and had a messy breakup? y/n"
+Skqw
+"The {# FFF574}{~}Edison Boost{/~}{#} is a {# 96EFFF}Celeste{#} movement technique coined by {# 62F2F5}Ricky06{#} in hit map {# d7cbcb}Spark in the Machine{#}... {# 9D9EA5}read more{#}"
+Tykim
+"This is my favourite map I've ever played, and yes, I've played Core B-Side by Maddy Thorson."
+Worldwaker2
+"Oh no! My machine, it's sparking!
+Oh hey, didn't see you there. After playing this masterpiece Ricky and Zucchini made, I wanted to make one of my own! But it doesn't seem to be going so we- *BOOM*"
+
+Bissy
+"Zucchini, Ricky, fonda and I came together talking about making a map with flowy gameplay and fun navigation puzzles.
+Fonda and I kind of fully dipped out of the project (skull emoji), but Zucchini and Ricky have continued seeing this through for 3 and a half years, and I'm so glad that they did because this SPARK IS SO PEAK
+Zucchini, Ricky... thank you guys for doing what I could not... my soul... it can rest easy...
+And thank you for playing the map! I hope you enjoy it." 
+
+SiTM_peak_games=
+Emanating softly from the mysterious, notably {~}larger{/~} statue, are echoes from its creators:
+ricky06
+I would like to publicly call out @abuffzucchini, for inviting me to play PEAK every other time I wanted to work on this map.
+He has made this map release 6 years later than it should have.
+ABuffZucchini
+:peak0:
+:peak1:
+:peak2:
+:peak4:
+:peak3:
+
+
+SiTM_credits_0=
+Authors
+ricky06
+ABuffZucchini
+
+
+SiTM_credits_1=
+Gameplay & Decoration
+ricky06
+ABuffZucchini
+
+
+SiTM_credits_2=
+Music
+Soggy Milk
+(With elevator tunes by Thegur90!)
+
+
+
+SiTM_credits_3=
+{2col}
+Playtesters
+Bissy
+Donk
+Kazt
+Skqw
+Tykim
+Worldwaker2
+
+
+SiTM_credits_4=
+Initial Project Management
+Bissy
+
+
+SiTM_credits_5=
+{pair}
+Decals
+ricky06
+ricky06
+ricky06
+ABuffZucchini
+Jungle Helper Team
+
+SiTM_credits_6=
+Tilesets
+Anilmky
+Flagpole1up
+ricky06
+
+SiTM_credits_7=
+{pair}
+Code
+catapillie
+Snip
+SSM24
+ricky06
+
+SiTM_credits_8=
+Camera
+ABuffZucchini
+ABuffZucchini
+ricky06
+Bissy
+ABuffZucchini
+
+
+SiTM_credits_9=
+{pair}
+3D Art
+ABuffZucchini
+
+SiTM_credits_10=
+HD Artwork
+ricky06
+ABuffZucchini
+(With a little help from FrenchTardigrade!)
+
+
+SiTM_credits_11=
+Dialog
+ABuffZucchini
+ricky06
+
+
+SiTM_credits_12=
+{pair}
+Filler Room Executive
+ABuffZucchini
+
+
+SiTM_credits_13=
+Cutscene Wizard
+ricky06
+
+
+SiTM_credits_14=
+Discord Testing
+Shrimpfest
+
+
+SiTM_credits_15=
+{pair}
+Diagonal Camera Offset Border Pioneer
+ricky06
+
+
+SiTM_credits_16=
+Diagonal Camera Offset Border Addict
+ABuffZucchini
+
+
+SiTM_credits_17=
+{2col}
+Helpers
+Adam's Add-ons
+AltSidesHelper
+bits & bolts
+Cherry Helper
+Chrono Helper
+Collab Utils 2
+Communal Helper
+Contort Helper
+Crystalline
+DJ Map Helper
+Eevee Helper
+Extended Variant Mode
+Factory Helper
+Femto Helper
+Flaglines And Such
+Frost Helper
+Honly Helper
+Jungle Helper
+Leniency Helper
+Lylyra Helper
+Maddie's Helping Hand
+Nerd Helper
+Pandora's Box
+SSM Helper
+Shroom Helper
+Sorbet Helper
+Style Mask Helper
+Vortex Helper
+Xaphan Helper
+And... Everest!
+
+
+SiTM_credits_18=
+Special Thanks
+Bissy
+fonda1515
+Andrew Bird
+You've Got Mail Team
+
+SiTM_credits_19=
+Thanks for playing!
+
+
+
+
+
+# to translators, both of these were for testing purposes, and do not show up in-game
+SiTM_young_test=
+{anchor middle}
+[YOUNG_EDWIN left normal]
+Test test test test
+[YOUNG_EDWIN left excited]
+Excited test. I'm so excited my name is edwin
+[YOUNG_OSHIRO left normal]
+Hello bro im ohsiro
+[YOUNG_OSHIRO left lostcontrol]
+I am big and scary serious oshriol
+[EDWIN left angry]
+RAHHH IM SO ANGRY
+[EDWIN left bitter]
+my life is so sad. pity me
+[OSHIRO right wistful]
+hello bro. hee hoo
+
+SiTM_test_edwin=
+[OSHIRO left normal]
+hello im mr. oshiro. for some reason my range of expressions are painfully limited, so i have decded to add a few more faces to my repertoire
+[OSHIRO left sad]
+oh no something has upset me boohoo i don twant to confront edwin
+[OSHIRO left distracted]
+my presidential suite raaahhh im mister oshiro
+
