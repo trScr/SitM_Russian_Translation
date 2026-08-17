@@ -30,20 +30,23 @@
 	poem_factory_BZFR_factory_A=Time Strips the Gears{n}‘Til You Forget What They Were For
 
 # Checkpoints
-	factory_BZFR_factory_A_start=The Boundary
-	factory_BZFR_factory_b_00_out=Metalworks
-	factory_BZFR_factory_c_00_out=Forlorn Industry
-	factory_BZFR_factory_d_00_in=My Closest Friend
-	factory_BZFR_factory_e_00_in=The Machine
-	factory_BZFR_factory_f_00_night=Stray Catwalks
-	factory_BZFR_factory_g_00_night=Tinkerer's Dissent
-	factory_BZFR_factory_h_00_east=Left Running
-	factory_BZFR_factory_i_00_collapse=The Outcome
+	factory_BZFR_factory_A_start=Граница
+	factory_BZFR_factory_b_00_out=Металлообработка
+	factory_BZFR_factory_c_00_out=Безнадёжная Индустрия
+	factory_BZFR_factory_d_00_in=Мой Лучший Друг
+	factory_BZFR_factory_e_00_in=Механизм
+	#Stray Catwalks? Выглядит как устойчивое выражение.
+	factory_BZFR_factory_f_00_night=Бродячие Подиумы
+	factory_BZFR_factory_g_00_night=Несогласие Мастера
+	factory_BZFR_factory_h_00_east=Оставлено Работать
+	factory_BZFR_factory_i_00_collapse=Исход
 
 # Names
-	EDWIN={# ffdb3b}Edwin{#}
-	WATTSON={# ffffab}Wattson{#}
-
+	EDWIN={# ffdb3b}Эдвин{#}
+	WATTSON={# ffffab}Ваттсон{#}
+	MADELINE=Мэдлин
+	MS_MADELINE=Мисс Мэдлин
+	MROSHIRO=Мистер Оширо
 # GUI Texts
 
 BZFR_explosion_prompt=Press
@@ -76,207 +79,208 @@ EAST SECTOR: TINKERER'S REMNANTS
 
 
 SiTM_factory_intro= 
-Dear Ms. Madeline,
-I hope this letter finds you swiftly and in good health, for time is of the utmost essence.
-I fear something important may be lost forever if I wait, so I humbly request your assistance.
-The coordinate for the location is as follows:
+Дорогая миссис Мэдлин,
+Я надеюсь, это письмо найдёт вас быстро и в добром здравии, ибо время имеет решающее значение.
+Я боюсь, что нечто важное будет потеряно, если я буду ждать, посему скромно прошу вашей помощи.
+Прилагаю координаты своей локации:
 XXX-36 .16 XbXX8X.51X.XX
-Please make haste, for the very fabric of my existence may rest on your shoulders.
-I bid you a safe journey, and hope to reconcile with you soon.
-Best, {n}Mr. Oshiro
+Прошу поторопиться, ибо сама ткань моего существования возлагается на ваши плечи.
+Желаю безопасной дороги и надеюсь встретиться с вами вскоре.
+С уважением, {n}Мистер Оширо
 
 
 SiTM_driveWalkup=
 [MADELINE left sad]
-Huh. Looks like this is as far as I'll be able to drive.
+Хм. Дальше не проехать.
 ...
 [MADELINE left distracted]
-What even is this place? It's completely abandoned.
+Что это вообще за место? Выглядит совершенно заброшенным.
 {trigger 0}
 [MADELINE left determinedclosed]
-Alright {+MADELINE}. You can do this.
+Хорошо, {+MADELINE}. Ты справишься.
 [MADELINE left distracted]
-Just gotta find him quickly. I hope he's okay...
+Нужно просто найти его по быстрому. Надеюсь, он в порядке...
 
 SiTM_poem_hint=
-Etched into the statue, almost illegible, is a short poem:
-{# 888888}- In locale long-overrun, sudden bursts of illumination -
-- In plain sight, reasons scattered to unearth motion -
-- In a machine which has long since stopped -{#}
+На статуе выгравировано едва различимое короткое стихотворение (пока что машинный перевод):
+{# 888888}- В месте, где время давно ушло, внезапные вспышки света -
+- На глазах у всех, причины, разбросанные, чтобы раскрыть движение -
+- В машине, которая давно остановилась -{#}
+
 
 
 SiTM_oshiro_intro_1=
 [OSHIRO right sidesuspicious]
-{+thought}Surrounded by your works like this... even after all these years, you still haven't changed...{+endthought}
+{+thought}Окружённый своими работами вот так... после стольких лет, не изменился ни на йоту...{+endthought}
 [OSHIRO right sideworried]
-{+thought}Why can't I simply knock on his door like anyone else would...?{+endthought}
+{+thought}Почему я не могу просто постучаться в его дверь, как это сделал бы любой другой...?{+endthought}
 
 
 SiTM_oshiro_intro_2=
 [MADELINE left surprised]
-{+MROSHIRO}, I finally found you!
+{+MROSHIRO}, я наконец нашла вас!
 
 {trigger 0 oshiro turns around}
 
 [OSHIRO right normal]
-Ah, {+MS_MADELINE}! You finally made it!
-I am {!}so{/!} glad you're here.
+А, {+MS_MADELINE}! Вы сделали это!
+Я {!}так{/!} рад, что вы здесь.
 
 {trigger 1 oshiro floats down}
 
 [MADELINE left normal]
-I'm happy to see you're fine! 
+Я рада видеть, что вы в порядке! 
 [MADELINE left sad]
-So what's wrong? Your letter was cryptic, but it seemed pretty serious.
+Так что случилось? Ваше письмо было очень размыто, но звучало серьёзно.
 
 [OSHIRO right drama]
-Ah, yes. You see, {+MS_MADELINE}, I've been facing a monumental crisis...
+Ах да. Видите ли, {+MS_MADELINE}, я встретил монументальный кризис...
 
 {trigger 2 oshiro floats away}
 
 [OSHIRO right sideworried]
-The Celestial Resort Hotel has just recently run out of its {#ffc370}ChocoMart™{#} fabric softener! 
+В отеле Небесный курорт недавно закончился смягчитель ткани от {#ffc370}ChocoMart™{#}! 
 [OSHIRO right drama flip]
-Without it, I’m dreading that our {~}softest blankets{/~} will start to {!}harden{/!} in texture.
+Без него я наши{~}лучшие мягкия одеяла{/~} начнут {!}твердеть{/!} в текстуре.
 
 {trigger 3 oshiro floats back, camera zoom}
 
 [OSHIRO right nervous]
-If we don’t get our hands on that fabric softener, I can see the grim reality already! {*}Bombarded with one star reviews...{/*}
+Если мы не возымеем такой смягчитель, я уже предвижу эту гнетущую реальность! {*}Бомбардировка из плохих отзывов...{/*}
 
 [MADELINE left upset]
 ...
-So let me get this straight.
-You wrote that dramatic letter, and rushed me all the way out here... just to get you some fabric softener?
+Так, позвольте мне уточнить.
+вы написали это драматичное письмо, и пригнали меня сюда... ради какого-то смягчителя ткани?
 
 [OSHIRO right normal]
-{~}Au contraire, {+MS_MADELINE}!{/~} This is not {!}just{/!} some fabric softener! 
-This represents the livelihood of the entire resort!
+{~}Au contraire, {+MS_MADELINE}!{/~} Это не {!}просто{/!} какой-то смягчитель ткани! 
+Это настоящая репрезентация благосостояния всего отеля!
 [OSHIRO right sidehappy flip]
-Just imagine surrendering to the embrace of the fluffy, cloud-like blankets enhanced by the {#ffc370}ChocoMart™{#} fabric softener!
+Только представьте, как приятно погрузиться в объятия пушистых, похожих на облака одеял усовершенствованных смягчителем ткани от {#ffc370}ChocoMart™{#}!
 [OSHIRO right normal]
-A night of unparalleled comfort and luxury.
+Целая ночь несравнимого ни с чем комфорта и роскоши.
 [OSHIRO right nervous]
-The customers won't even want to get up in the morning!
+Покупатели не захотят вставать с кровати утром!
 
 [MADELINE left upset]
-...Uh huh.
+...А-га.
 
 [OSHIRO right normal]
-Now, come with me {+MS_MADELINE}!
-The true {~}conundrum{/~} lies on the inside!
+Теперь, пойдёмте со мной, {+MS_MADELINE}!
+Главная {~}загадка{/~} находится внутри!
 
 
 SiTM_oshiro_factory_1=
 [OSHIRO right normal]
-Right this way, {+MS_MADELINE}.
+Сюда, {+MS_MADELINE}.
 
 {trigger 0 walk forward}
 
 [MADELINE left distracted]
-This place is practically falling apart {+MROSHIRO}...
+Это место едва ли не разваливается на части, {+MROSHIRO}...
 [MADELINE left sad]
-Is this really the best option for getting fabric softener?
+Неужели это действительно лучшее место, где можно было достать смягчитель?
 
 {trigger 1 oshiro turns left}
 
 [OSHIRO right normal]
-Oh, without a doubt!
+О, без всяких сомнений!
 [OSHIRO right normal]
-I'm quite {0.3}{~}familiar{/~}{0.4} with this factory.
+Я довольно хорошо {0.3}{~}знаком{/~}{0.4} с этой фабрикой.
 [OSHIRO right nervous]
-I've done more than just toil away at my hotel, you know!
+Я, знаете ли, не только в отеле трудился как проклятый!
 
 {trigger 2 oshiro turns right}
 
 [OSHIRO right sidesuspicious]
-However, it seems there have been some renovations under way.
-These yellow switches have showed up everywhere.
+Однако, судя по всему, тут проводились некоторые реновации.
+Повсюду появились эти жёлтые переключатели.
 [OSHIRO right sideworried]
-Unfortunately for me, it seems I lack the... {~}physical form{/~} to activate them.
+К несчастью для меня, мне не хвататет... {~}физического облика{/~}, чтобы активировать их.
 
 {trigger 3 oshiro turns left}
 
 [OSHIRO right normal]
-This is where you come in, {+MS_MADELINE}! I've never been more appreciative of your assistance.
+И вот тут вступаете в дело вы, {+MS_MADELINE}! Никогда ещё не ценил вашу помощь так сильно.
 
 [MADELINE left sad]
-So you just want me to activate these switches?
+Так ты просто хочешь, чтобы я активировала эти переключатели?
 [MADELINE left normal]
-I suppose I can help with that.
+Полагаю, я могу помочь с этим.
 [MADELINE left upset]
-{1.0}...You didn't need to scare me with that ominous letter though.
+{1.0}...Правда, вам явно не нужно было пугать меня таким зловещим письмом.
 
 
 SiTM_oshiro_factory_2=
 [OSHIRO left normal]
-Thank you so much {+MS_MADELINE}! You're always so reliable.
+Спасибо огромное, {+MS_MADELINE}! На вас всегда можно положиться.
 
 [MADELINE right normal]
-No problem! I'm glad I was able to help.
+Без проблем! Я рада, что смогла помочь.
 [MADELINE right distracted]
-So... what now? How do we actually {~}find{/~} the fabric softener?
+Так... что теперь? Как мы будем {~}искать{/~} сам смягчитель?
 
 [OSHIRO left normal]
-Simple! We'll split up and search.
-Somewhere in this factory lies an assembly line...
+Очень просто! Мы разделимся и будем искать.
+Где-то в этой фабрике находится линия сборки...
 [OSHIRO left sidehappy]
-Overflowing with supplies to keep my blankets in cloudlike bliss for the next decade!
+Переполненная запасами, которые позволят моим одеялам оставаться такими же мягкими, как облака, на последующие десятилетия!
 
 [MADELINE right sad]
-Right. So what should I be looking for exactly?
+Хорошо. На что мне нужно будет обратить внимание, если конкретно?
 [MADELINE right distracted]
-I can't help but feel a bit uneasy with a factory in these conditions.
+Не могу не испытывать некоторое беспокойство по поводу фабрики в таком состоянии.
 
 [OSHIRO left normal]
-Oh, trust me. You'll know when you see it. 
+О, поверь мне. Ты поймёшь, когда увидишь. 
 [OSHIRO left worried]
-The machinery is so loud, the production line is so relentless, it practically {~}screams{/~} its presence.  
+Оборудование работает так громко, а производственная линия - так безжалостно, что она буквально {~}кричит{/~} о своём существовании.  
 
 [MADELINE right distracted]
-See, that's what worries me. This place seems completely {~}abandoned{/~}.
+Понимаешь, это меня и беспокоит. Это место выглядит совершенно {~}заброшенным{/~}.
 [MADELINE right sad]
-Are you sure the assembly line is even-
+Ты уверен, что сборочная линия вообще-
 
 [OSHIRO left nervous]
-{!}AH!{/!} There's no time to waste![OSHIRO left sidehappy flip] We'll regroup once one of us finds it!
+{!}А!{/!} Нельзя терять ни секунды![OSHIRO left sidehappy flip] Соберёмся вновь, когда кто-нибудь из нас найдёт её!
 
 {trigger 0 oshiro fucks off}
 
 [MADELINE right sad flip]
-Wait, {+MROSHIRO}-
+Погодите, {+MROSHIRO}-
 [MADELINE right upset flip]
 ...
 [MADELINE right determinedclosed flip]
-{0.5}...What have I gotten myself into?
+{0.5}...Во что я ввязалась?
 
 
 
 SiTM_oshiro_confront=
 [OSHIRO left nervous]
-Ah, {+MS_MADELINE}! How is your search going?
+А, {+MS_MADELINE}! Как поживает ваш поиск?
 
 [MADELINE right sad]
-No luck yet. How about you?
+Пока ничего. Что насчёт вас?
 
 [OSHIRO left nervous]
-Oh yes... I also haven't had much luck...
+Ах да... У меня тоже ничего...
 ...
 
 [MADELINE right distracted]
-You seem pretty on edge, {+MROSHIRO}. Is the hotel business doing okay?
+Вы кажетесь слегка взволнованным, {+MROSHIRO}. С вашим бизнесом всё хорошо?
 [MADELINE right sad]
-Besides the whole... blanket crisis, I mean.
+Я имею в виду, помимо всего... кризиса с одеялами.
 
 [OSHIRO left worried]
-Oh, it's {~}buzzing{/~}, {+MS_MADELINE}! Customers are through the roof, and this time only metaphorically!
+О, он {~}процветает{/~}, {+MS_MADELINE}! Покупателей выше крыши и на сей раз лишь метафорически!
 [OSHIRO left normal]
-Your cleanup help really gave me the push I needed to get the place in tip-top shape.
+Ваша помощь с уборкой дала тот необходимый толчок, чтобы привести всё в порядок.
 
 [MADELINE right normal]
-I'm just happy I could help.
+Я просто рада помочь.
 [MADELINE right distracted]
-Do you... usually come here to get the fabric softener yourself? Why did you bring me with you this time? 
+А вы... usually come here to get the fabric softener yourself? Why did you bring me with you this time? 
 
 [OSHIRO left worried]
 Oh, heavens no! I had it all stockpiled, it just ran out the other day, and I knew there was no time to waste.
@@ -1817,4 +1821,5 @@ hello im mr. oshiro. for some reason my range of expressions are painfully limit
 oh no something has upset me boohoo i don twant to confront edwin
 [OSHIRO left distracted]
 my presidential suite raaahhh im mister oshiro
+
 
