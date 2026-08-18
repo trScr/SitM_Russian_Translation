@@ -279,57 +279,57 @@ SiTM_oshiro_confront=
 [MADELINE right normal]
 Я просто рада помочь.
 [MADELINE right distracted]
-А вы... usually come here to get the fabric softener yourself? Why did you bring me with you this time? 
+А вы... всегда приходите сюда за кондиционером? Почему вы привели меня с собой именно сейчас? 
 
 [OSHIRO left worried]
-Oh, heavens no! I had it all stockpiled, it just ran out the other day, and I knew there was no time to waste.
+О, святые небеса, конечно нет! У меня были большие запасы, которые однажды иссякли, и я понял, что нельзя терять ни секунды.
 [OSHIRO left sidesuspicious]
-{+thought}Why is she asking me all these questions all of a sudden?{+endthought}
+{+thought}С чего вдруг она начала задавать все эти вопросы?{+endthought}
 
 [MADELINE right sad]
-{+MROSHIRO}, I'm glad you're doing better with your hotel, but your lying skills need some work.
-What's really going on here?
+{+MROSHIRO}, Я рада, что дела в отеле улучшаются, но ваше умение врать оставляет желать лучшего.
+Что на самом деле тут происходит?
 [MADELINE right distracted]
-It's not nice to drag someone along with you if you aren't going to say why.
+Нехорошо тащить кого-то с собой и не объяснить, почему.
 
 [OSHIRO left nervous]
 ...
 [OSHIRO left serious]
-Alright, you caught me. 
-There's an... {~}old acquaintance{/~} of mine who resides in this factory, and I was hoping to reconnect with him, somehow.
+Ладно, вы меня подловили. 
+У меня есть... {~}старый знакомый{/~}, который проживает в этой фабрике, и я надеюсь каким-то образом воссоединиться с ним.
 [OSHIRO left wistful]
-You always seemed to be so good at befriending people.
-Heck, you and {+THEO} got along like clockwork!
+Вы всегда казались мне тем, кто легко находит общий язык с людьми.
+Черт, вы с {+THEO} ладили как часы!
 [OSHIRO left serious]
-I suppose I just thought it'd be helpful to have you by my side for it. We didn't exactly part on great terms.
+Полагаю, я просто подумал, что было бы здорово видеть вас на своей стороне. Мы разошлись не на самой хорошей ноте.
 
 [MADELINE right sad]
-You know, you could have just told me that. There was no need for your weird bedding story.
+Знаешь, ты ведь мог просто сказать мне это. Не было никакой нужды придумывать странную сказку про бельё.
 
 [OSHIRO left serious]
-You're right, {+MS_MADELINE}. I should have been more truthful with you, I have no excuse.
+Вы правы, {+MS_MADELINE}. Мне стоило быть с вами честным, у меня нет оправданий.
 
 [MADELINE right distracted]
-I mean,[MADELINE right normal] I'll still help! 
-It's nice to see you wanting to connect with people, and I'm excited to meet your friend. 
+Вообще-то,[MADELINE right normal] я всё ещё собираюсь помочь! 
+Приятно видеть, что вы стараетесь общаться с людьми, и я была бы рада встретиться с вашим другом. 
 
 [MADELINE right distracted]
-Just, next time tell me that, alright?
+Но, в следующий раз просто скажите мне об этом, ладно?
 
 [OSHIRO left wistful]
-Of course, {+MS_MADELINE}. Thank you.
+Конечно, {+MS_MADELINE}. Спасибо вам.
 
 
 {trigger 0 oshiro digs for key}
 
 [OSHIRO left normal]
-It's quite a mess in here, but I found this key in this storage closet.
-I suspect it unlocks the upper levels of the factory.
+Здесь тот ещё беспорядок, однако я нашёл ключ в этой кладовке.
+Я полагаю, он открывает верхние этажи фабрики.
 
 {trigger 1 oshiro gives key}
 
 [MADELINE right normal]
-Thanks, {+MROSHIRO}. I'll check it out.
+Спасибо, {+MROSHIRO}. Сейчас посмотрю.
 
 
 
@@ -337,40 +337,40 @@ Thanks, {+MROSHIRO}. I'll check it out.
 
 SiTM_mini_locked_door_1=
 [MADELINE right sad]
-Seems like it's sealed shut...
+Выглядит наглухо закрытым...
 
 SiTM_elevator_fail_1=
 [MADELINE left distracted]
-Hm?
+Хм?
 
 SiTM_elevator_fail_2=
 [MADELINE left panic]
-Oh no...
+О нет...
 
 SiTM_elevator_fail_3=
 [MADELINE left panic]
-{~}{big}AHHHHHHH!{/big}{/~}
+{~}{big}ААААААА!{/big}{/~}
 
 SiTM_post_elevator_fail=
 [MADELINE left panic]
-Ugh... my everything hurts...
+Уф... всё болит...
 
 {trigger 0 madeline sits up}
 
-That's gotta be the second worst fall I've ever had...
+Это, должно быть, второе по жёсткости падение, что у меня было...
 
 {trigger 1 madeline gets up}
 
 [MADELINE left distracted]
-Wait... {0.5}[MADELINE left surprised]This is where that locked door was!
+Погоди-ка... {0.5}[MADELINE left surprised]Это место где была та закрытая дверь!
 
 {trigger 2 camera pan}
 
 [MADELINE left sad]
-That's one way to unlock the path, I guess.
+Что ж, как вариант, я полагаю.
 
 [MADELINE left upset]
-Just wish it didn't involve nearly turning me into a pancake.
+Хотя можно было и не рисковать превратиться в блин.
 
 {trigger 3 camera pan back}
 
@@ -380,18 +380,18 @@ Just wish it didn't involve nearly turning me into a pancake.
 {trigger 4 turn around}
 
 [MADELINE left determinedclosed]
-Okay. Breathe, {+MADELINE}.
-Everything will be fine. {n} Just gotta keep pushing forward.
+Окей. Дыши, {+MADELINE}.
+Всё будет в порядке. {n} Нужно просто продолжать идти вперёд.
 
 SiTM_mini_post_elevator=
 [MADELINE left sad]
-The previous path is completely sealed off...
+Основной путь теперь полностью заблокирован...
 
 SiTM_edwin_intro=
 [EDWIN left excited]
-{~}{big}A visitor!{/big}{/~} 
+{~}{big}Посетитель!{/big}{/~} 
 [EDWIN left normal]
-How wonderfully unexpected. {~}Welcome to my stage!{/~}
+Как неожиданно и приятно. {~}Добро пожаловать на мою сцену!{/~}
 
 [MADELINE right surprised]
 Whoa! Are you... a robot?
