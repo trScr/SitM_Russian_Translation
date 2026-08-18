@@ -3,7 +3,7 @@
 # The . Symbol will cause a pause unless escaped with \. (ex: Mr. Oshiro has a pause, Mr\. Oshiro does not)
 # Newlines automatically create a Page Break, unless there is an {n} command on the previous line
 # Commands: Anything inside of curly braces {...} is a command and should not be translated.
-
+#агшравгши
 # Inline Text Commands:
 # {~}wavy text{/~}
 # {!}impact text{/!}
