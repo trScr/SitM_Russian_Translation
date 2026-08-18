@@ -1603,30 +1603,30 @@ Tomorrow sounds like a good day to start.
 # Misc dialogue and unused
 
 SiTM_playtester_credits=
-Emanating softly from the mysterious statue, are echoes from those who bore witness to the assembly of this machine:
+В тени таинственных монументов тебе удалось уловить еле слышимые воспоминания тех, кому посчастливилось наблюдать возведение этого механизма:
 Donk
 "I didn’t know when to dash or blow!"
 Kazt
-"Chat do you think Oshiro and Edwin were lovers and had a messy breakup? y/n"
+"Чат, а вам не кажется что Оширо и Эдвин - это просто скандальная парочка? да/нет"
 Skqw
-"The {# FFF574}{~}Edison Boost{/~}{#} is a {# 96EFFF}Celeste{#} movement technique coined by {# 62F2F5}Ricky06{#} in hit map {# d7cbcb}Spark in the Machine{#}... {# 9D9EA5}read more{#}"
+"Так называемый {# FFF574}{~}Эдисон-буст{/~}{#} - это тек, придуманный {# 62F2F5}Ricky06{#} для своей известной карты {# d7cbcb}Spark in the Machine{#}... {# 9D9EA5}читать далее{#}"
 Tykim
-"This is my favourite map I've ever played, and yes, I've played Core B-Side by Maddy Thorson."
+"Эта карта - лучшее, во что я когда-либо играл. Даже в сравнении с 8B."
 Worldwaker2
-"Oh no! My machine, it's sparking!
-Oh hey, didn't see you there. After playing this masterpiece Ricky and Zucchini made, I wanted to make one of my own! But it doesn't seem to be going so we- *BOOM*"
+*О нет! Мой механизм искрит!
+О, не заметил тебя. Поиграв в эту великолепную карту, сделанную Ricky и Zucchini, мне тоже захотелось построить что-нибудь подобное! Вот только не всё пошло по пла- *БУМ**
 
 Bissy
-"Zucchini, Ricky, fonda and I came together talking about making a map with flowy gameplay and fun navigation puzzles.
-Fonda and I kind of fully dipped out of the project (skull emoji), but Zucchini and Ricky have continued seeing this through for 3 and a half years, and I'm so glad that they did because this SPARK IS SO PEAK
-Zucchini, Ricky... thank you guys for doing what I could not... my soul... it can rest easy...
-And thank you for playing the map! I hope you enjoy it." 
+"Мы вместе с Zucchini, Ricky и fonda как-то собрались и решили построить карту с приятным геймплеем и прикольным роутингом.
+Я и fonda как-то слились с проекта (skull emoji), но эти двое продолжали воплощать эту идею в жизнь на протяжении долгих трёх с половиной лет. И результат просто НЕВЕРОЯТЕН!
+Zucchini, Ricky... спасибо, вы сделали то, что я мне не удалось... теперь я могу спать спокойно...
+А вам спасибо за игру! Надеюсь, вам эта карта тоже понравилась."
 
 SiTM_peak_games=
-Emanating softly from the mysterious, notably {~}larger{/~} statue, are echoes from its creators:
+В тени таинственного (и заметно {~}более крупного{/~}) монумента тебе удалось уловить слова архитекторов:
 ricky06
-I would like to publicly call out @abuffzucchini, for inviting me to play PEAK every other time I wanted to work on this map.
-He has made this map release 6 years later than it should have.
+"Все должны знать, что @abuffzucchini заставлял меня играть с ним в PEAK вместо маппинга.
+По его вине карта вышла на шесть лет позже чем следовало бы.
 ABuffZucchini
 :peak0:
 :peak1:
@@ -1636,27 +1636,27 @@ ABuffZucchini
 
 
 SiTM_credits_0=
-Authors
+Авторы
 ricky06
 ABuffZucchini
 
 
 SiTM_credits_1=
-Gameplay & Decoration
+Геймплей и декорации
 ricky06
 ABuffZucchini
 
 
 SiTM_credits_2=
-Music
+Музыка
 Soggy Milk
-(With elevator tunes by Thegur90!)
+(Музыка в лифте от Thegur90!)
 
 
 
 SiTM_credits_3=
 {2col}
-Playtesters
+Плейтестеры
 Bissy
 Donk
 Kazt
@@ -1666,35 +1666,35 @@ Worldwaker2
 
 
 SiTM_credits_4=
-Initial Project Management
+Изначальная организация
 Bissy
 
 
 SiTM_credits_5=
 {pair}
-Decals
+Декали
 ricky06
 ricky06
 ricky06
 ABuffZucchini
-Jungle Helper Team
+Команда Jungle Helper
 
 SiTM_credits_6=
-Tilesets
+Текстуры
 Anilmky
 Flagpole1up
 ricky06
 
 SiTM_credits_7=
 {pair}
-Code
+Программирование
 catapillie
 Snip
 SSM24
 ricky06
 
 SiTM_credits_8=
-Camera
+Работа с камерой
 ABuffZucchini
 ABuffZucchini
 ricky06
@@ -1704,52 +1704,52 @@ ABuffZucchini
 
 SiTM_credits_9=
 {pair}
-3D Art
+3D-моделирование
 ABuffZucchini
 
 SiTM_credits_10=
-HD Artwork
+Рисование
 ricky06
 ABuffZucchini
-(With a little help from FrenchTardigrade!)
+(С небольшой помощью FrenchTardigrade!)
 
 
 SiTM_credits_11=
-Dialog
+Текст
 ABuffZucchini
 ricky06
 
 
 SiTM_credits_12=
 {pair}
-Filler Room Executive
+Ответственный по филлерным комнатам
 ABuffZucchini
 
 
 SiTM_credits_13=
-Cutscene Wizard
+Катсцены
 ricky06
 
 
 SiTM_credits_14=
-Discord Testing
+Тестирование в Discord
 Shrimpfest
 
 
 SiTM_credits_15=
 {pair}
-Diagonal Camera Offset Border Pioneer
+Исследователь камеры с диагональным оффсетом
 ricky06
 
 
 SiTM_credits_16=
-Diagonal Camera Offset Border Addict
+Любитель камеры с диагональным оффсетом
 ABuffZucchini
 
 
 SiTM_credits_17=
 {2col}
-Helpers
+Хелперы
 Adam's Add-ons
 AltSidesHelper
 bits & bolts
@@ -1779,18 +1779,18 @@ Sorbet Helper
 Style Mask Helper
 Vortex Helper
 Xaphan Helper
-And... Everest!
+И конечно же... Everest!
 
 
 SiTM_credits_18=
-Special Thanks
+Особые благодарности
 Bissy
 fonda1515
 Andrew Bird
 You've Got Mail Team
 
 SiTM_credits_19=
-Thanks for playing!
+Спасибо за игру!
 
 
 
