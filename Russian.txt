@@ -1,5 +1,5 @@
 # NOTES:
-# The # Symbol at the start of a line counts as a Comment. To include in dialog, use a \#
+# The # символ at the start of a line counts as a Comment. To include in dialog, use a \#
 # The . Symbol will cause a pause unless escaped with \. (ex: Mr. Oshiro has a pause, Mr\. Oshiro does not)
 # Newlines automatically create a Page Break, unless there is an {n} command on the previous line
 # Commands: Anything inside of curly braces {...} is a command and should not be translated.
