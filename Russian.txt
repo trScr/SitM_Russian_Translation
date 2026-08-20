@@ -324,12 +324,12 @@ SiTM_oshiro_confront=
 
 [OSHIRO left normal]
 Здесь тот ещё беспорядок, однако я нашёл ключ в этой кладовке.
-Я полагаю, он открывает верхние этажи фабрики.
+Думаю, он открывает верхние этажи фабрики.
 
 {trigger 1 oshiro gives key}
 
 [MADELINE right normal]
-Спасибо, {+MROSHIRO}. Сейчас посмотрю.
+Спасибо, {+MROSHIRO}. Сейчас проверю.
 
 
 
@@ -353,7 +353,7 @@ SiTM_elevator_fail_3=
 
 SiTM_post_elevator_fail=
 [MADELINE left panic]
-Уф... всё болит...
+Ух... всё болит...
 
 {trigger 0 madeline sits up}
 
@@ -362,7 +362,7 @@ SiTM_post_elevator_fail=
 {trigger 1 madeline gets up}
 
 [MADELINE left distracted]
-Погоди-ка... {0.5}[MADELINE left surprised]Это место где была та закрытая дверь!
+Погоди-ка... {0.5}[MADELINE left surprised]Это то место где была закрытая дверь!
 
 {trigger 2 camera pan}
 
@@ -394,64 +394,64 @@ SiTM_edwin_intro=
 Как неожиданно и приятно. {~}Добро пожаловать на мою сцену!{/~}
 
 [MADELINE right surprised]
-Whoa! Are you... a robot?
+Ух ты! Вы... робот?
 
 {trigger 0 edwin moves in}
 
 [EDWIN left proud]
-I'm {+EDWIN}, the inventor! 
-Most everything you see here, from cogs, to gears, and delightful contraptions, was built by me.
+Я {+EDWIN}, изобретатель! 
+Всё, что вы здесь видите, от шестерней и переключателей до невероятных устройств, было построено мною.
 [EDWIN left normal]
-And your name, miss?
+А как вас зовут, мисс??
 
 [MADELINE right normal]
-I'm {+MADELINE}, I'm a mountain climber. 
+Меня зовут {+MADELINE}, и я скалолаз. 
 
 [EDWIN left normal]
-Pleasure to be at your {~}acquaintance{/~}. 
+{~}Приятно познакомиться{/~}. 
 
 [MADELINE right distracted]
 ...
 [MADELINE right sad]
-I am {~}so{/~} sorry.
+Мне нужно {~}сильно{/~} извиниться.
 
 [EDWIN left curious]
-Hm, by the looks of smoke and soot on your cheek I take it something gave you trouble?
+Хм, полпгаю, судя по дыму и саже на вашей щеке, с вами приключилась какая-то беда?
 
 [MADELINE right panic]
-Your elevator! I took your elevator and it just... got {~}STUCK{/~} and {!}FELL{/!} and now it's-
+Ваш лифт! Я поднималась по вашему лифту... и он... {~}застрял!{/~}. А затем {!}упал{/!}! И теперь он-
 [MADELINE right sad]
-...I broke it. I broke your elevator.
-I swear I didn't touch anything I wasn't supposed to!
+...Я сломала его. Я сломала ваш лифт.
+Клянусь, я не трогала ничего лишнего!
 [MADELINE right sad]
-It just... {0.5}died.
+Он просто... {0.5}заглох.
 [MADELINE right distracted]
-With me in it.
+Пока я была в нём.
 
 [EDWIN left normal]
-Oh! {~}That{/~} old thing?
-Don't worry about it. The whole factory's practically falling apart...
+Оу! {~}Вон та{/~} старая штука?
+Не волнуйся на этот счёт. Вся фабрика едва ли не разваливается...
 
 {trigger 1 edwin turns around}
 
 [EDWIN left resigned flip]
-There's just too much to fix. I don't even know where to start.
+Слишком многое нужно починить, и я даже не знаю, с чего начать.
 
 [MADELINE right sad]
-Still. Let me help fix things around here.
+Так или иначе. Позвольте мне помочь вам с починкой.
 [MADELINE right distracted]
-It's the least I can do for breaking your elevator.
+Это меньшее, что я могла бы сделать за сломанный лифт.
 
 {trigger 2 edwin turns back}
 
 [EDWIN left excited]
-{!}{big}Such generosity!{/big}{/!}
-{!}{big}An offer I could never refuse!{/big}{/!}
+{!}{big}Какая щедрость!{/big}{/!}
+{!}{big}Предложение, от которого я просто не смогу отказаться!{/big}{/!}
 
 {trigger 3 edwin chill}
 
 [EDWIN left normal]
-If you're willing, I would appreciate the help.
+Если вы готовы, буду очень признателен за вашу помощь.
 [EDWIN left resigned]
 However, I'm not sure you're up for the job.
 There's so much wreckage around {~}everywhere{/~}, and my transportation system isn't quite finished yet.
